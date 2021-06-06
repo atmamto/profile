@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/initial.css">          <!--pour les parametres comuns-->  
+    <link rel="stylesheet" href="css/all.css">              <!--pour font awsome-->
+    <link rel="stylesheet" href="css/colorRed.css" id="styleColor">              <!--pour font awsome-->
+    <link rel="stylesheet" href="css/style.css">   <!--pour ecran plus de 1000px -->            
+    <link rel="stylesheet" href="css/style700to999.css">   <!--pour ecran plus de 1000px -->            
+    <link rel="stylesheet" href="css/style500to699.css">   <!--pour ecran plus de 1000px -->            
+    <link rel="stylesheet" href="css/style200to499.css">   <!--pour ecran plus de 1000px -->            
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- additifs -->
+    <i class="fas fa-certificate"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-play"></i>
+    <i class="fas fa-square"></i>
+    <i class="fas fa-bomb"></i>
+    <i class="fas fa-spinner"></i>
+    
+
+    <div class="bodyBox">
+        <div class="sharBox">
+            <div class="sharInnerBox">
+                <i class="fas fa-share-alt" onclick="afficheSocialIcons()"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+                <!-- <i class="fab fa-youtube"></i> -->
+
+            </div>
+        
+        </div>
+        <div class="btnColor">
+            <div class="colorBox">
+                <div class="btncoloriser red" onclick="changeColor('Red')"><i class="fas fa-tint"></i></div>
+                <div class="btncoloriser blue" onclick="changeColor('Blue')"><i class="fas fa-tint"></i></div>
+                <div class="btncoloriser pink" onclick="changeColor('Pink')"><i class="fas fa-tint"></i></div>
+            </div>
+            <div class="btnBoxCol">
+                <div class="btnParametre"><i class="fas fa-cog"></i></div>
+            </div>
+            
+        </div>
+        <div class="btnsMenu">
+            <div class="btn" onclick="affichePage(0),progressNo()"><i class="fa fa-home"></i><span>Home</span></div>
+            <div class="btn"onclick="affichePage(1),progressNo()"><i class="fa fa-user"></i><span>Abut Me</span></div>
+            <div class="btn"onclick="affichePage(2),setTimeout(progress,500);" ><i class="fa fa-briefcase"></i><span>Skils</span></div>
+            <div class="btn"onclick="affichePage(3),progressNo()"><i class="fa fa-image"></i><span>Portfolio</span></div>
+            <div class="btn"onclick="affichePage(4),progressNo()"><i class="fa fa-comments"></i><span>Coments</span></div>
+            <div class="btn"onclick="affichePage(5),progressNo()"><i class="fa fa-envelope"></i><span>Contact</span></div>
+        </div>
+        <div class="imgPortfolio"><img src="images/portfolioImg.jpg" alt="portfolio image"></div>
+        <div class="contenu">
+            <div class="contenuBox">
+                <!-- page home -->
+                <div class="mypage pageHome activePage">
+                    <div class="pageHomeCentent">
+                        <div class="homeImg"><img src="images/portfolioImg.jpg" alt=""></div>
+                        <h1 class="transition500">Alex MILNER</h1>
+                        <h3>Web Designer</h3>
+                        <div class="download transition500"><a href="images/skills2.jpg" target="_blank"> Download CV</a></div>
+                    </div>
+                    <div id="homeHour">
+
+                    </div>
+                </div>
+
+                <!-- page About -->
+                <div class="mypage about">
+                    <div class="titlePage">About <span>me</span></div>
+                    <div class="aboutParegraphe">
+                        Proin volutpat mauris ac pellentesque pharetra. Suspendisse congue elit vel odio suscipit, sit amet tempor nisl imperdiet. Quisque ex justo, faucibus ut mi in, condimentum finibus dolor. Aliquam vitae hendrerit dolor, eget imperdiet mauris. Maecenas et ante id ipsum condimentum dictum et vel massa. Ut in imperdiet dolor, vel consectetur dui.
+                    </div>
+                    <div class="aboutInfos">
+                        <div class="info">age <span>36</span></div>
+                        <div class="info">Residence <span>USA</span></div>
+                        <div class="info">Address <span>88 Some Street, Some Town</span></div>
+                        <div class="info">e-mail <span>email@example.com</span></div>
+                        <div class="info">Phone <span>+0123 123 456 789</span></div>
+                    </div>
+                    <div class="canDo">
+                        <div class="subTitlePage">What <span>I Do</span></div>
+                        <div class="do transition1500">
+                            <i class="fas fa-store"></i>
+                            <h2>ecommerce</h2>
+                            <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales.</p>
+                        </div>
+
+                        <div class="do transition1500">
+                            <i class="fas fa-pen"></i>
+                            <h2>Copywriting</h2>
+                            <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales.</p>
+                        </div>
+
+                        <div class="do transition1500">
+                            <i class="fas fa-laptop"></i>
+                            <h2>Web Design</h2>
+                            <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales</p>
+                        </div>
+
+                        <div class="do transition1500">
+                            <i class="fas fa-flag"></i>
+                            <h2>Management</h2>
+                            <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales. </p>
+                        </div>
+                    </div>
+
+                    <div class="pricing">
+                        <div class="subTitlePage">Fun  <span>Facts</span></div>
+                        <div class="pricingBoxes">
+                            <div class="pricingBox transition1000">
+                                <i class="fas fa-heart"></i>
+                                <h2>Happy Clients</h2>
+                                <span>578</span>
+                            </div>
+
+                            <div class="pricingBox transition1000">
+                                <i class="fas fa-clock"></i>
+                                <h2>Working Hours</h2>
+                                <span>4,542</span>
+                            </div>
+
+                            <div class="pricingBox transition1000">
+                                <i class="fas fa-star"></i>
+                                <h2>Awards Won</h2>
+                                <span>15</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+
+
+                </div>
+
+                <!-- page Skills -->
+                <div class="mypage skills">
+                    <div class="titlePage">Skills</div>
+                    <!-- programming skills -->
+                        <div class="skillPart">  
+                        <div class="subTitlePage">Programming <span> Skills</span></div>
+                        <div class="skillContent">
+                            <div class="skillName">HTML</div>
+                            <div class="skill">
+                                <div class="skilProgress transition1500"><span>95%</span></div>
+                            </div>
+                        </div>
+
+                        <div class="skillContent">
+                            <div class="skillName">CSS</div>
+                            <div class="skill">
+                                <div class="skilProgress transition1500"><span>80%</span></div>
+                            </div>
+                        </div>
+
+                        <div class="skillContent">
+                            <div class="skillName">JAVASCRIPT</div>
+                            <div class="skill">
+                                <div class="skilProgress transition1500"><span>75%</span></div>
+                            </div>
+                        </div>
+
+                        <div class="skillContent">
+                            <div class="skillName">PHP</div>
+                            <div class="skill">
+                                <div class="skilProgress transition1500"><span>50%</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- language skills -->
+                    <div class="languageSkillPart">
+                        <div class="subTitlePage">Languages <span> Skills</span></div>
+                        <div class="languageSkillsBox">
+                            <div class="languageSkill transition1000">
+                                <span>Arabic</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="langSkillExpression">Very Good</div>
+                            </div>
+
+                            <div class="languageSkill transition1000">
+                                <span>French</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="langSkillExpression">Good</div>
+                            </div>
+
+                            <div class="languageSkill transition1000">
+                                <span>English</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="langSkillExpression">little</div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <!-- Edication -->
+                    <div class="educationsBox">
+                        <div class="subTitlePage">Education <span> ....</span></div>
+                        <div class="educationBox">
+                            <div class="educationLeft"><span>School</span><span class="annee">2000-2010</span></div>
+                            <div class="educationRight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ab assumenda, doloremque sint nemo eligendi, nostrum temporibus placeat magnam quisquam officiis? Dignissimos aperiam eum quam.</div>
+                        </div>
+
+                        <div class="educationBox">
+                            <div class="educationLeft"><span>Oxford</span><span class="annee">2010-2016</span></div>
+                            <div class="educationRight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ab assumenda, doloremque sint nemo eligendi, nostrum temporibus placeat magnam quisquam officiis? Dignissimos aperiam eum quam.</div>
+                        </div>
+                    </div>
+                    
+
+
+
+                </div>
+
+                <!-- page Portfolio -->
+                <div class="mypage protfolio">
+                    <div class="titlePage">Portfolio </div>
+                    <div class="portfolioBox">
+                        <div class="portfolioLinks">
+                            <div class="porfolioLink colorInitial" onclick="afficheListItems(0),colorItem(0)" >All</div>
+                            <div class="porfolioLink" onclick="afficheListItems(1),colorItem(1)">List 1</div>
+                            <div class="porfolioLink" onclick="afficheListItems(2),colorItem(2)">List 2</div>
+                            <div class="porfolioLink" onclick="afficheListItems(3),colorItem(3)">List 3</div>
+                        </div>
+                        <div class="portfolioItems">
+
+                            <!-- show box -->
+                            <div class="showImgeBox">
+                                <img />
+                            </div>
+                            <div class="closeShoxBox" onclick="hideSowImgBox()">X</div>
+
+                            <div class="portfolioItem afficheItem list1 transition500" onclick="showImgBox(0)">
+                                <img src="images/portfolioImage/portfolio1.jpg" alt="portfolio1">
+                                <h2>Item 1</h2>
+                            </div>
+                            
+                            <div class="portfolioItem afficheItem list3 transition500"  onclick="showImgBox(1)">
+                                <img src="images/portfolioImage/portfolio2.jpg" alt="portfolio2">
+                                <h2>Item 2</h2>
+                            </div>
+                            
+                            <div class="portfolioItem afficheItem list3 transition500" onclick="showImgBox(2)">
+                                <img src="images/portfolioImage/portfolio3.jpg" alt="portfolio3">
+                                <h2>Item 3</h2>
+                            </div>
+                            
+                            <div class="portfolioItem afficheItem list3 transition500"  onclick="showImgBox(3)">
+                                <img src="images/portfolioImage/portfolio4.jpg" alt="portfolio4">
+                                <h2>Item 4</h2>
+                            </div>
+                            
+                            <div class="portfolioItem afficheItem list2 transition500"  onclick="showImgBox(4)">
+                                <img src="images/portfolioImage/portfolio5.jpg" alt="portfolio5">
+                                <h2>Item 5</h2>
+                            </div>
+                            
+                            <div class="portfolioItem afficheItem list1 transition500"  onclick="showImgBox(5)">
+                                <img src="images/portfolioImage/portfolio6.jpg" alt="portfolio6">
+                                <h2>Item 6</h2>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+                <!-- page comments -->
+                <div class="mypage comments">
+                    <div class="titlePage">Comments </div>
+                    <div class="commentsOuterBox">
+                        <div class="btnsSlide">
+                            <span class=" transition500 colorCommentsBtns" onclick="colorCommentsBtns(0)"></span>
+                            <span class=" transition500" onclick="colorCommentsBtns(1)"></span>
+                            <span class=" transition500"onclick="colorCommentsBtns(2)"></span>
+                        </div>
+                        <div class="commentsInnerBox transition1500">
+                            <div class="myCommentBox">
+                                <img src="images/commentImage/man1.png" alt="">
+                                <h2>Mourad</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore rem veniam quas provident deleniti saepe eaque architecto quo odit natus?</p>
+                            </div>
+                            <div class="myCommentBox ">
+                                <img src="images/commentImage/woman1.png" alt="">
+                                <h2>Sarah</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore rem veniam quas provident deleniti saepe eaque architecto quo odit natus?</p>
+                            </div>
+                            <div class="myCommentBox">
+                                <img src="images/commentImage/man2.png" alt="">
+                                <h2>Ahmed</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore rem veniam quas provident deleniti saepe eaque architecto quo odit natus?</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+                <!-- page contact -->
+                <div class="mypage contact">
+                    <div class="titlePage">Contact <span> Me</span></div>
+                    <div class="contactInfos">
+
+                        <div class="boxContact transition500">
+                            <i class="fas fa-phone"></i>
+                            <span>415-832-2000</span>
+                        </div>
+
+                        
+                        <div class="boxContact transition500">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>415-853-1200</span>
+                        </div>
+                        
+                        <div class="boxContact transition500">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>san fransisco</span>
+                        </div>
+                        
+                    </div>
+                    <div class="or"><span>Or</span></div>
+                    <div class="ContactMessageBox">
+                        <div class="inpt" ><input type="text" onfocus="deplacePlaceholder('div.inpt input','0')" onblur="deplacePlaceholderNon('div.inpt input','0')"> <span>first Name</span></div>
+                        <div class="inpt" ><input type="text" onfocus="deplacePlaceholder('div.inpt input','1')" onblur="deplacePlaceholderNon('div.inpt input','1')"><span>Secund Name</span></div>
+                        <div class="txtarea"><textarea name="txtarea" id="txtarea" cols="30" rows="10" onfocus="deplacePlaceholder('div.txtarea textarea','0')" onblur="deplacePlaceholderNon('div.txtarea textarea','0')" ></textarea><span class="transition500">Message</span></div>
+                        <button>Send</button>
+                    </div>
+
+                </div>
+                
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
